@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+let nilai = prompt("masukkan nilai:", 0)
+let hasil = "";
+
+switch(true){
+
+    case nilai >= 91 && nilai <=100:
+         hasil = "nilai anda A"
+    break;
+
+    case nilai >= 81 && nilai <= 90:
+        hasil = "nilai anda B"
+    break;
+
+    case nilai >= 71 && nilai <= 80 :
+        hasil = "nilai anda C"
+    break;
+
+    case nilai >= 61 && nilai <= 70  :
+        hasil = "nilai anda D"
+    break;
+
+    case nilai >= 0 && nilai <= 60:
+        hasil = "nilai anda F"
+    break;
+
+    
+    default:
+        document.write("Maaf nilai anda Tidak ada");
+}
+
+document.write(hasil);
+
+    </script>
+</body>
+</html>
